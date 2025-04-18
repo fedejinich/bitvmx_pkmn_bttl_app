@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pokemon Font */
+@font-face {
+  font-family: 'Pokemon';
+  src: url('/fonts/pokemon-solid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Pokemon Title Styling */
+.pokemon-title {
+  font-family: 'Pokemon Solid', sans-serif;
+  color: #ffcb05; /* Pokemon Yellow */
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 
+    -3px -3px 0 #3B4CCA,
+    3px -3px 0 #3B4CCA,
+    -3px 3px 0 #3B4CCA,
+    3px 3px 0 #3B4CCA,
+    -4px 0 0 #3B4CCA,
+    4px 0 0 #3B4CCA,
+    0 -4px 0 #3B4CCA,
+    0 4px 0 #3B4CCA;
+  -webkit-text-stroke: 2px #3B4CCA;
+}
+
+/* Basic styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}

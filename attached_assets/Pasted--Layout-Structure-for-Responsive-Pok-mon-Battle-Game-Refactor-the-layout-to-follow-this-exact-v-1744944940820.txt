@@ -1,0 +1,65 @@
+# 🧱 Layout Structure for Responsive Pokémon Battle Game
+
+Refactor the layout to follow this exact vertical structure and make it **fully responsive**, with all elements properly aligned, occupying the **entire vertical screen (`100vh`)**:
+
+---
+
+### ✅ Structure (top to bottom):
+
+1. **Title (Game Logo)**
+   - Display at the top.
+   - Centered horizontally.
+   - Scales responsively on smaller screens.
+
+2. **Status Bars**
+   - Show two panels side by side (or stacked on mobile):
+     - Left: player’s Pokémon (name, level, HP)
+     - Right: Charizard (name, level, HP)
+   - Keep sizing and alignment consistent.
+
+3. **Arena (Battle Area)**
+   - Center this block.
+   - Left: Pokéball or selected player Pokémon.
+   - Right: Charizard.
+   - Both sprites must use the **exact same fixed height** (e.g., `120px`) and be vertically aligned on the same ground level.
+   - Ensure consistent spacing between them.
+
+4. **Message Box**
+   - Positioned **fixed** or **absolute bottom** within the full container (like a Game Boy).
+   - Must **always be visible**, without moving or shifting the layout.
+   - Only its **text content should change dynamically**.
+
+5. **Action Button**
+   - Appears **directly below the message box**.
+   - Should be responsive and touch-friendly.
+   - Should not overlap with the message box or go offscreen.
+
+---
+
+### 📱 Responsiveness Notes
+
+- On **mobile**:
+  - Stack content where necessary.
+  - Reduce padding and font size to preserve layout integrity.
+  - Ensure all sprites remain visible without scroll.
+
+- On **desktop**:
+  - Use flex or grid to align items horizontally.
+  - Allow more spacing and larger font/sprite sizes.
+
+---
+
+### 💅 Style Requirements
+
+- Use `height: 100vh` on the main wrapper.
+- Use Tailwind utility classes like `flex-col`, `justify-between`, and `items-center` to vertically distribute space.
+- Apply `image-rendering: pixelated` to all sprites.
+- Set consistent height (e.g., `h-[120px]`) for all Pokémon and Pokéball sprites.
+- Remove any inconsistent margins/paddings that break alignment.
+- Add `overflow-hidden` if necessary to prevent scroll flickering.
+
+---
+
+### 🎯 Goal
+
+Make the game feel like a **real retro Pokémon battle UI**, pixel-perfect, with no layout shifts or overflow. All elements must snap to their correct positions on both desktop and mobile.
