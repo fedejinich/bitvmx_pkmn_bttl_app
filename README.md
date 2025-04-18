@@ -4,7 +4,9 @@
   <img src="bg.png" alt="banner" width="600"/>
 </div>
 
-A bitcoin Pokémon battle simulator where players face off against Charizard for a chance to unlock Bitcoin rewards using BitVMX to verify the outcome of the battle. Choose wisely — only one Pokémon can win.
+---
+
+This is a Bitcoin Pokémon battle simulator, where the player face off against Charizard for a chance to unlock Bitcoin rewards. This game uses [BitVMX protocol](https://bitvmx.org/) to verify the outcome of the battle. Choose wisely — only one Pokémon can win.
 
 ## Getting Started
 
