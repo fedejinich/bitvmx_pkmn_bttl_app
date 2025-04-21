@@ -40,7 +40,7 @@ app.use((req, res, next) => {
   }
 
   // Start server
-  const port = 5000;
+  const port = 8080;
   server.listen({
     port,
     host: "0.0.0.0",
