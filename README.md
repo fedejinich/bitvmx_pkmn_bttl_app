@@ -1,7 +1,7 @@
 # PKMN_BTTL - Pokémon Battle Game
 
 <div align="center">
-  <img src="bg.png" alt="banner" width="600"/>
+  <img src="bg.jpg" alt="banner" width="600"/>
 </div>
 
 ---
