@@ -121,7 +121,7 @@ function App() {
       ></div>
       
       {/* Main Game Container - Takes full viewport height */}
-      <div className="w-full h-full flex flex-col items-center justify-between relative z-10">
+      <div className="w-full pt-8 h-full flex flex-col items-center justify-between relative z-10">
         {/* 1. Title (Game Logo) - Fixed at top with more padding */}
         <div className="pt-8 pb-6 text-center">
           <h1 className="pokemon-title drop-shadow-lg text-4xl sm:text-5xl">PKMN_BTTL</h1>
@@ -329,6 +329,14 @@ function App() {
                   onClick={() => window.open(explorerUrl, '_blank')}
                 >
                   VIEW ON BITVMX EXPLORER
+                </button>
+
+                {/* Info button */}
+                <button 
+                  className="bg-blue-300 border-2 border-black hover:bg-blue-400 text-black font-bold py-2 px-4 md:px-6 rounded-md text-xs md:text-sm font-mono w-full sm:w-auto"
+                  onClick={() => setIsModalOpen(true)}
+                >
+                  MORE ABOUT BITVMX
                 </button>
               </div>
             )}
